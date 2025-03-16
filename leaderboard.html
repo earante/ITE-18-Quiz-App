@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Leaderboard</title>
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <h1>Interactive Quiz App</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active hover-highlight"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white hover-highlight" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white hover-highlight"
+                  href="leaderboard.html"
+                  >Leaderboard</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container my-5">
+      <section class="card p-4">
+        <h2>Leaderboard</h2>
+
+        <div class="table-responsive mt-4">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Score</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-table">
+              <!-- Leaderboard data will be inserted here by JavaScript -->
+              <tr>
+                <td colspan="4" class="text-center">
+                  No scores available yet. Be the first to complete the quiz!
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center mt-4">
+          <button id="clear-leaderboard" class="btn btn-danger">
+            Clear Leaderboard
+          </button>
+          <a href="index.html" class="btn btn-primary ms-2">Back to Home</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Interactive Quiz App. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="js/leaderboard.js"></script>
+  </body>
+</html>
