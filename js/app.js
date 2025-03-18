@@ -1,5 +1,3 @@
-// Main Quiz Application Logic
-
 // Global variables
 let currentQuestionIndex = 0;
 let score = 0;

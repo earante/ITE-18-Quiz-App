@@ -1,5 +1,3 @@
-// Leaderboard Functionality
-
 // Initialize leaderboard when the page loads
 document.addEventListener("DOMContentLoaded", function () {
   displayLeaderboard();
